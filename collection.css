@@ -1,0 +1,280 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background image and font for the whole page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('cover.jpg'); /* Replace 'cover.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Basic Navbar CSS */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the navbar is on top */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Company logo styles */
+.company-logo {
+    max-width: 100px; /* Adjust the width of your logo */
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+/* Menu styles */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.menu a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Search form styles */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"],
+.search-form button {
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.search-form input[type="text"] {
+    width: 150px;
+}
+
+.search-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Content section styles */
+.product-list {
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    margin: 80px auto; /* Center the content vertically and horizontally */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    text-align: center;
+}
+
+/* Section heading styles */
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section paragraph styles */
+.section-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+/* Product item styles */
+.product-item {
+    margin: 20px;
+    max-width: 200px; /* Set the maximum width to 200px */
+    max-height: 200px; /* Set the maximum height to 200px */
+    overflow: hidden; /* Hide any overflowing content */
+    display: inline-block; /* Display product items inline */
+    vertical-align: top; /* Align items at the top */
+    transition: transform 0.3s ease-in-out; /* Add a subtle scale effect on hover */
+}
+
+.product-item img {
+    width: 100%; /* Ensure the image takes up 100% of the container width */
+    height: auto; /* Allow the image to scale with the width while maintaining aspect ratio */
+}
+
+.product-item:hover {
+    transform: scale(1.03); /* Scale up slightly on hover */
+}
+
+/* Style for the zoom in and zoom out buttons */
+.lightbox button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.lightbox button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Style for the zoom in button */
+#zoomInBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Style for the zoom out button */
+#zoomOutBtn {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Ensure it's below other content */
+}
+
+/* Style for the content section behind the background photo */
+#new-collection {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Strong shadow */
+    text-align: center;
+    color: #fff;
+    position: relative; /* Position relative to allow z-index */
+    z-index: 1; /* Set a lower z-index to appear behind the background photo */
+}
+
+/* Add styles for the previous and next buttons */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 3; /* Ensure it's above other content */
+}
+
+.carousel-controls button {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.carousel-controls button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Style for the previous button */
+#prevBtn {
+    left: 20px;
+}
+
+/* Style for the next button */
+#nextBtn {
+    right: 20px;
+}
+
+/* Add styles for zoom in and out buttons */
+.lightbox-zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.lightbox-zoom button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.lightbox-zoom button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Style for the zoom in button */
+#zoomInBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Style for the zoom out button */
+#zoomOutBtn {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+/* Style for the exit button */
+#exitBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

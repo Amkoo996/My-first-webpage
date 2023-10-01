@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosnian Lilium 387 Clothing!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header class="navbar hidden">
+        <div class="logo">Bosnian Lilium</div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">New Collection</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="qa.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="cart-link"><img src="cart-icon.png" alt="Cart"><a href="cart.html">Cart (0)</a> </li>
+        </ul>
+        <div class="search-form">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button type="button" onclick="search()">Search</button>
+        </div>
+    </header>
+    
+    <div class="user-profile" id="userProfile">
+        <div class="user-avatar" onclick="toggleUserData()">U</div>
+        <div class="user-data" id="userData">
+            <p>Name: John Doe</p>
+            <p>Age: 30</p>
+            <p>Address: 123 Main St</p>
+            <p>Phone: (123) 456-7890</p>
+            <button onclick="logout()">Log Out</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="company-logo">
+            <img src="your-company-logo.png" alt="Bosnian Lilium logo">
+        </div>
+        
+        <section id="about">
+            <header>
+                <h1>Dobrodošli u Bosnian Lilium 387 Clothing!</h1>
+            </header>
+            <h2>O nama</h2>
+            <p>
+                Bosnian Lilium 387 Clothing je vaša destinacija za modu koja istražuje tradiciju i stvara modernu priču. Naša strast prema Bosni i Hercegovini i njenim bogatim kulturnim nasleđem odražava se u svakom komadu odeće koji stvaramo.
+            </p>
+            <p>
+                Oduševićete se našom paletom autentičnih i udobnih komada inspirisanih bosanskim motivima i narodnom tradicijom. Svi naši proizvodi se proizvode sa ljubavlju i pažnjom prema detaljima.
+            </p>
+        </section>
+        <section id="highlights">
+            <h2>Šta nas izdvaja?</h2>
+            <ul>
+                <li>Originalni dizajn inspirisan bosanskom kulturom</li>
+                <li>Kvalitetni materijali i pažnja prema detaljima</li>
+                <li>Udobnost i stil koji se stapaju</li>
+                <li>Ponosno izrađeno u Bosni i Hercegovini</li>
+            </ul>
+        </section>
+        <section id="explore">
+            <h2>Istražite našu kolekciju</h2>
+            <p>
+                Svojom posvećenošću da prenesemo duh Bosne kroz našu odeću, pozivamo vas da istražite našu kolekciju i pronađete komade koji odražavaju vašu jedinstvenu priču.
+            </p>
+            <a href="shop.html">Posetite našu prodavnicu</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: 387econ@gmail.com</p>
+            <p>Location: Zeleni put 108, Ilidža, 71000 Sarajevo, Bosnia and Herzegovina</p>
+        </div>
+    </footer>
+    
+    <!-- Rest of your content goes here -->
+    <script src="index.js"></script>
+</body>
+</html>

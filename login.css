@@ -1,0 +1,116 @@
+/* New CSS for the page with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('cover.jpg'); /* Replace 'cover.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* White text color */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Align content at the top and bottom */
+    align-items: center; /* Center horizontally */
+    height: 75vh; /* Set the height to 75% of the viewport height */
+}
+
+/* Style for the navbar */
+.navbar {
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 2; /* Ensure the navbar is on top */
+}
+
+/* Styles for the main content */
+main {
+    max-width: 1000px; /* Wider content */
+    margin-top: 60px; /* Add space below the fixed navbar */
+    padding: 40px; /* More padding for readability */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    text-align: center; /* Text alignment for content */
+    color: #fff; /* Text color */
+}
+
+/* Corrected class name to match the HTML ID */
+
+.login-wrapper {
+    background-color: #494747; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px; /* Spacing inside the container */
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text */
+}
+
+.login-heading {
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.login-input {
+    width: 100%; /* Full width for input */
+    padding: 10px; /* Spacing inside input */
+    margin-bottom: 10px; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.login-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Spacing inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Button text size */
+}
+
+/* Optional: Style for error message */
+.login-error {
+    color: red; /* Red text color */
+    margin-top: 10px; /* Spacing above error message */
+}
+
+/* New CSS for Cover Image and Text Overlay */
+.cover {
+    position: relative;
+    text-align: center;
+}
+
+.cover img {
+    width: 100%; /* Ensure the image covers the entire container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    color: #fff; /* Text color */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px; /* Add padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.cover-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cover-text p {
+    font-size: 18px;
+}

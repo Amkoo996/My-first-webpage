@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title go here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosnian Lilium 387 Clothing</title>
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css"> <!-- Add a separate CSS file for the navbar -->
+    
+</head>
+<body>
+    <header class="navbar hidden"> <!-- Initially hidden -->
+        <div class="logo">Bosnian Lilium</div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">New Collection</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="qa.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="cart-link"><img src="cart-icon.png" alt="Cart"><a href="cart.html">Cart (0)</a> </li>
+        </ul>
+        <div class="search-form">
+            <input type="text" placeholder="Search">
+            <button type="button">Search</button>
+        </div>
+    </header>
+
+    <section id="new-collection">
+        <h2 class="section-heading">Kolekcija</h2>
+        <p class="section-paragraph">"Otkrijte našu najnoviju i najuzbudljiviju kolekciju do sada! Naši dizajneri naporno rade stvarajući izbor proizvoda koji utjelovljuju najnovije trendove i vječne klasike. Od stylish odjeće do modernih dodataka, naša nova kolekcija obećava podići vaš stil na nove visine. Bez obzira tražite li svakodnevne essentials ili statement komade koji ostavljaju trag, sve ćete pronaći u našoj pažljivo odabranoj novoj kolekciji. Prihvatite modne dizajne i kvalitetnu izradu koja će sigurno ostaviti trajan utisak. Budite korak ispred i istražite naše nove dolazke danas."</p>
+    </section>
+
+    <main class="product-list">
+        <div class="image-container"> <!-- Add opening <div> tag here -->
+            <!-- Integrated image carousel -->
+            <div class="carousel-controls">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+            <img src="product1.jpeg" alt="1" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.3.jpeg" alt="2" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.1.jpeg" alt="3" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.1blue.jpeg" alt="4" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.2.jpeg" alt="5" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.2.blue.jpeg" alt="6" class="zoomable-image" style="height: 200px; width: 200px;">
+            <img src="Product1.3.blue.jpeg" alt="7" class="zoomable-image" style="height: 200px; width: 200px;">
+        </div>
+    
+        <!-- Lightbox/Modal Container -->
+<div class="lightbox">
+    <span class="close-button">&times;</span>
+    <img src="product1.jpeg" alt="1" id="zoomed-image-1">
+    <img src="Product1.3.jpeg" alt="2" id="zoomed-image-2">
+    <img src="Product1.1.jpeg" alt="3" id="zoomed-image-3">
+    <img src="Product1.1blue.jpeg" alt="4" id="zoomed-image-4">
+    <img src="Product1.2.jpeg" alt="5" id="zoomed-image-5">
+    <img src="Product1.2.blue.jpeg" alt="6" id="zoomed-image-6">
+    <img src="Product1.3.blue.jpeg" alt="7" id="zoomed-image-7">
+    <button id="lightboxZoomInBtn">Zoom In</button>
+    <button id="lightboxZoomOutBtn">Zoom Out</button>
+</div>
+
+    
+                <h2>Bosnian Lilium Dukserica</h2>
+            <p>"Otkrijte udobnost i stil s Bosnian Lilium duksericom. Naša dukserica nudi mekoću i toplinu, idealnu za sve prilike. Jednostavan, ali elegantan dizajn čini je savršenom za svakodnevno nošenje. Dostupna u različitim bojama kako bi odgovarala vašem stilu. Uživajte u udobnosti i izgledu s Bosnian Lilium duksericom."</p>
+            <p><strong>Cijena: 79,90 KM</strong></p>
+            <button onclick="addToCart()">Dodaj u korpu</button>
+        </div>
+
+            <!-- Add more product items as needed -->
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: 387econ@gmail.com</p>
+            <p>Location: Zeleni put 108, Ilidža, Sarajevo, Bosnia and Herzegovina</p>
+        </div>
+    </footer>
+
+    <script src="collection.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title go here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosnian Lilium 387 Clothing!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css"> <!-- Add a separate CSS file for the navbar -->
+    <style>
+        /* Style for user profile */
+        .user-profile {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .user-data {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar hidden"> <!-- Initially hidden -->
+        <div class="logo">Your Logo</div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">New Collection</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="qa.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="cart-link"><img src="cart-icon.png" alt="Cart"><a href="cart.html">Cart (0)</a> </li>
+        </ul>
+        <div class="search-form">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button type="button" onclick="search()">Search</button>
+        </div>
+    </header>
+    
+    <div class="user-profile" id="userProfile">
+        <div class="user-avatar" onclick="toggleUserData()">U</div>
+        <div class="user-data" id="userData">
+            <p>Name: John Doe</p>
+            <p>Age: 30</p>
+            <p>Address: 123 Main St</p>
+            <p>Phone: (123) 456-7890</p>
+            <button onclick="logout()">Log Out</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Your main content here -->
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: 387econ@gmail.com</p>
+            <p>Location: Zeleni put 108, Ilidža, 71000 Sarajevo, Bosnia and Herzegovina</p>
+        </div>
+    </footer>
+    
+    <!-- Rest of your content goes here -->
+    <script>
+        // Simulated user authentication state
+        let isAuthenticated = false;
+
+        // Function to toggle user data display
+        function toggleUserData() {
+            const userData = document.getElementById('userData');
+            userData.style.display = userData.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to simulate user logout
+        function logout() {
+            isAuthenticated = false;
+            // Redirect the user to the login page or perform other logout actions
+            window.location.href = 'login.html';
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menu = document.querySelector(".menu");
+            const navbar = document.querySelector(".navbar");
+
+            menuIcon.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+
+            // Show the navbar when the menu icon is clicked
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("hidden");
+            });
+
+            // Check authentication status and update UI
+            const userProfile = document.getElementById('userProfile');
+            if (isAuthenticated) {
+                userProfile.style.display = 'block'; // Show the user profile
+            } else {
+                userProfile.style.display = 'none'; // Hide the user profile
+            }
+        });
+
+        // Simulated search function (replace with actual logic)
+        function search() {
+            alert('Search functionality will be implemented.');
+        }
+    </script>
+</body>
+</html>

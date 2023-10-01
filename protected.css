@@ -1,0 +1,16 @@
+/* New CSS for the page with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('welcome.jpeg'); /* Replace 'cover.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* White text color */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Align content at the top and bottom */
+    align-items: center; /* Center horizontally */
+    height: 75vh; /* Set the height to 75% of the viewport height */
+}
